@@ -1,0 +1,14 @@
+node_modules/
+.pnpm-store/
+dist/
+*.tgz
+*.log
+.cache/
+.tsbuildinfo
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

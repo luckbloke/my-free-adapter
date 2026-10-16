@@ -2,11 +2,25 @@
   "name": "dsh-my-free-adapter",
   "version": "0.1.0",
   "type": "module",
-  "main": "index.js",
-  "files": ["index.js", "cordis.patch.yml"],
+  "main": "lib/index.js",
+  "files": ["lib", "cordis.patch.yml"],
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
     }
+  },
+  "scripts": {
+    "build": "tsdown src/index.ts --format esm --out-dir lib",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@earendil-works/pi-ai": "0.82.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1",
+    "@types/node": "^24.0.0",
+    "tsdown": "^0.15.0",
+    "typescript": "^5.9.0"
   }
 }
