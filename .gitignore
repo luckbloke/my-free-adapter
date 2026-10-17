@@ -1,10 +1,9 @@
 node_modules/
 .pnpm-store/
-dist/
+lib/
+.cache/
 *.tgz
 *.log
-.cache/
-.tsbuildinfo
 .env
 .env.*
 !.env.example

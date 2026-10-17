@@ -1,3 +1,8 @@
 allowBuilds:
   '@google/genai': false
   protobufjs: false
+# The DSH host packages we build against are freshly published release
+# candidates; do not let the supply-chain age gate re-resolve them away.
+minimumReleaseAgeExclude:
+  - '@deepseek-ai/*'
+  - '@earendil-works/*'
