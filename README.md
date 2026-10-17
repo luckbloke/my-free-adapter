@@ -27,7 +27,8 @@
 ```powershell
 pnpm install
 pnpm run build
-dsh plugin install link:D:\my-free-adapter
+pnpm pack
+dsh plugin --profile web add ./dsh-my-free-adapter-1.1.0.tgz
 ```
 
 也可以使用 `plugin_manager` / Web GUI 的「设置 → 插件」安装同一个 `link:` 路径。
